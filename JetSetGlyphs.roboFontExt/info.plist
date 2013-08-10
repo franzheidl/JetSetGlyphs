@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>addToMenu</key>
+	<array>
+		<dict>
+			<key>path</key>
+			<string>JetSetGlyphs.py</string>
+			<key>preferredName</key>
+			<string>JetSetGlyphs</string>
+			<key>shortKey</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>developer</key>
+	<string>Franz Heidl</string>
+	<key>developerURL</key>
+	<string>www.franzheidl.de</string>
+	<key>html</key>
+	<true/>
+	<key>launchAtStartUp</key>
+	<integer>0</integer>
+	<key>mainScript</key>
+	<string></string>
+	<key>name</key>
+	<string>JetSetGlyphs</string>
+	<key>requiresVersionMajor</key>
+	<string>1</string>
+	<key>requiresVersionMinor</key>
+	<string>4</string>
+	<key>timeStamp</key>
+	<real>1376078221.7720921</real>
+	<key>version</key>
+	<string>1.0</string>
+	<key>repository</key>
+	<string>franzheidl/JetSetGlyphs</string>
+</dict>
+</plist>
