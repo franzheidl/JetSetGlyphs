@@ -13,7 +13,7 @@ class JetSetGlyphs(BaseWindowController):
 
     def __init__(self):
         self.bundle = ExtensionBundle("JetSetGlyphs")
-        self.resourcesPath = self.bundle.resourcesPath()
+        #self.resourcesPath = self.bundle.resourcesPath()
         self.sourceFont = False
         self.targetFont = False
         self.sourceName = ""
@@ -25,12 +25,12 @@ class JetSetGlyphs(BaseWindowController):
         self.w.importFileButton = Button((20, 35, -20, 20), u"Import from File \u2026", sizeStyle="small", callback=self.ImportFileGlyphs)
         self.w.departBox = Box((10, 65, -10, 100))
         self.w.departIcon = ImageView((18, 72, 28, 28))
-        self.w.departIcon.setImage(self.resourcesPath + "/departures.pdf")
+        self.w.departIcon.setImage(imageObject=(self.bundle.get("departures")))
         self.w.departTitle = TextBox((50, 70, -10, 20), "Departures")
         self.w.departCount = TextBox((50, 88, -10, 16), "--", sizeStyle="small")
         self.w.arriveBox = Box((10, -140, -10, -95))
         self.w.arriveIcon = ImageView((18, -130, 28, 28))
-        self.w.arriveIcon.setImage(self.resourcesPath + "/arrivals.pdf")
+        self.w.arriveIcon.setImage(imageObject=(self.bundle.get("arrivals")))
         self.w.glyphList = List((10, 105, -10, -135), [], enableDelete=True, editCallback=self.UpdateArrivalCount)
         self.w.glyphList.enable(0)
         self.w.arriveTitle = TextBox((50, -132, -10, 20), "Arrivals")
@@ -64,8 +64,6 @@ class JetSetGlyphs(BaseWindowController):
         if len(self.sourceGlyphs) > 0:
             if self.targetFont != None:
                 if self.targetFont != self.sourceFont:
-                    #font = self.targetFont
-                    #font.prepareUndo("JetSetGlyphs")
                     self.targetGlyphs = self.targetFont.lib["public.glyphOrder"]
                     
                     targetGlyphOrder = self.targetGlyphs
@@ -78,7 +76,6 @@ class JetSetGlyphs(BaseWindowController):
                             
                     newGlyphOrder.sort()
                     self.targetFont.glyphOrder = newGlyphOrder
-                    #font.performUndo()
                     self.targetFont.update()
                 else:
                     self.showMessage(u"Ergh\u2026", "You are trying to apply a glyphset to the font you took it from!")
