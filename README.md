@@ -18,10 +18,11 @@ Import the entire glyphset from the current font.
 Import a glyphset from a space-separated .txt-file.
 
 ### Edit Glyphset In-Flight
-To remove individual glyphs from the passenger list, click them and hit backspace/delete. Hold Shift to select multiple glyphs at once for deletion.
+To add glyphs to the glyphset click the "+"-button in the toolbar. Enter mutliple glyphs by entering their names space-separated.
+To remove glyphs from the passenger list, click-select them in the list and click the "-"-button in the toolbar. Hold Shift to select multiple glyphs.
 
 ### Create Glyphs In Font
-Will create the glyphs from your imported/edited glyphset in the current font. Glyphs that already exist in the current font will be respected, only glyphs that are not present in your current font will be created as template glyphs.
+Create the glyphs from your imported/edited glyphset in the current font. Glyphs that already exist in the current font will be respected, only glyphs that are not present in your current font will be created as template glyphs.
 
 ***Warning: Creating Glyphs can not be undone.***
 
@@ -33,6 +34,18 @@ Copy a space-separated string of your glyphset to the clipboard, ideal for pasti
 
 ### Update JetSetGlyphs
 Use [Mechanic](https://github.com/jackjennings/Mechanic) to update or pull from github and re-install manually.
+
+
+### Changelist
+**v1.4** Filter glyhs, add glyphs, toolbar for adding and removing glyphs.
+
+**v1.1.2** Update version number again to exit update loop bug introduced with v1.1.1.
+
+**v1.1.1** Update version number in plist, no functional changes.
+
+**v.1.1** Use Open/Save dialogs attached to window.
+
+**v1.0** Initial Release.
 
 ##The MIT License (MIT)
 

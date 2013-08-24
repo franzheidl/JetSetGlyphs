@@ -2,30 +2,77 @@
 <head>
   <meta charset="utf-8">
   <title>JetSetGlyphs Help</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #333;
+    }
+    h1 {
+      padding-bottom: 4px;
+      border-bottom: 1px solid #ddd;
+    }
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 8px
+    }
+    .fineprint p {
+      font-size: 12px;
+    }
+  </style>
 </head>
 <body>
   <h1>JetSetGlyphs Help</h1>
+  <p>Version 1.4</p>
   <h2>Import Glyphset From Font</h2>
-  Will import the glyphset from the current font.
+  <p>Import the entire glyphset from the current font.</p>
   
   <h2>Import Glyphset From File</h2>
-  Will import a glyphset from a space-separated .txt-file.
+  <p>Import a glyphset from a space-separated .txt-file.</p>
   
   <h2>Edit Glyphset In-Flight</h2>
-  <p>To remove indivdual glyphs from your passenger list, click them and hit backspace/delete. Hold Shift to select multiple glyphs at once for deletion.</p>
+  <p>
+    To add glyphs to the glyphset click the "+"-button in the toolbar. Enter mutliple glyphs by entering their names space-separated.
+  </p>
+  <p>
+    To remove glyphs from the passenger list, click-select them in the list and click the "-"-button in the toolbar. Hold Shift to select multiple glyphs.
+  </p>
   
   <h2>Create Glyphs In Font</h2>
-  <p>Will create the glyphs from your imported/edited glyphset in your current font. Glyphs that already exist in your current font will be respected, only glyphs that are not present in your current font will be created as template glyphs.</p>
-  <strong>Creating Glyphs can not be undone.</strong>
+  <p>Create the glyphs from your imported/edited glyphset in your current font. Glyphs that already exist in your current font will be respected, only glyphs that are not present in your current font will be created as template glyphs.</p>
+  <strong>Warning: Creating Glyphs can not be undone.</strong>
   
   <h2>Export Glyphset to File</h2>
-  Will create a space-separated .txt-file of your imported/edited glyphset.
+  <p>Create a space-separated .txt-file of your imported/edited glyphset.</p>
   
   <h2>Copy Glyphset to Clipboard</h2>
-  Will copy a space-separated string of your glyphset to the clipboard, ideal for pasting into a new default character set at RoboFont > Preferences > Character Set.
+  <p>Copy a space-separated string of your glyphset to the clipboard, ideal for pasting into a new default character set at RoboFont > Preferences > Character Set.</p>
   
   <h2>Update JetSetGlyphs</h2>
   Use <a href="https://github.com/jackjennings/Mechanic">Mechanic</a> or pull from <a href="https://github.com/franzheidl/jetsetglyphs">https://github.com/franzheidl/jetsetglyphs</a>.
-  
+
+<div class="fineprint">
+  <h2>The MIT License (MIT)</h2>
+  <p>
+    Copyright (c) 2013 Franz Heidl
+  </p>
+  <p>
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+  <P>
+  <p>
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  </p>
+  <p>
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+   THE SOFTWARE.
+  </p>
+</div>
 </body>
 </html>
