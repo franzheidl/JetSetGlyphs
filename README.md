@@ -2,7 +2,7 @@ JetSetGlyphs
 ============
 An extension for RoboFont to transfer glyphsets across fonts in style.
 
-![JetSetGlyphs Screenshot](http://github.com/franzheidl/jetsetglyphs/raw/master/screenshots/jetsetglyphs.png)
+![JetSetGlyphs Screenshot](screenshots/jetsetglyphs.png)
 
 
 
